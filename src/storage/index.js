@@ -86,7 +86,7 @@ async function unStaleAndStore(fullData, key) {
  * @param {*} data
  * @param {number} timeLimitInSeconds
  */
-async function removeStaleData(data, timeLimitInSeconds) {
+function removeStaleData(data, timeLimitInSeconds) {
   const presentTimeStamp = Math.floor(Date.now() / 1000);
   const unStaledData = [];
   for (let i = 0; i < data.length; i++) {
