@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 // Important Function Imports
-const { port } = require('./config');
+const port = process.env.PORT || 3000;
 
 const { logMetric, getMetricSum, handleMissingRoutes } = require('./src/controllers');
 
